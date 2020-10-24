@@ -1,0 +1,33 @@
+@import '../../../styles/global.scss';
+
+.retry-footer-container {
+  background-color: $maeli-background-footer;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(36,36,36,1);
+
+  .footer-opis {
+    flex-direction: column;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    padding: 0.7rem;
+    text-align: center;
+
+    .title-footer {
+      font-weight: 600;
+    }
+  }
+
+  @media only screen and (max-width: $tablet-size),
+      screen and (min-device-width : $mobile-min-device-size)
+          and (max-device-width : $mobile-max-device-size)
+          and (-webkit-device-pixel-ratio : 2),
+      screen and (min-device-width : $mobile-min-device-size-pro)
+          and (max-device-width : $mobile-max-device-size-pro)
+          and (-webkit-device-pixel-ratio : 3),
+      screen and (min-device-width : $mobile-min-device-size)
+          and (max-device-width : $mobile-max-device-size)
+          and (-webkit-min-device-pixel-ratio: 2) {
+            display: none
+          }
+}

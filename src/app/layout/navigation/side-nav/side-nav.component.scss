@@ -1,0 +1,32 @@
+@import '../../../../styles/global.scss';
+
+.body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+
+  .footer, .header {
+    flex: none;
+  }
+
+  .side-nav-container {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    padding: var(--space);
+    overflow-x: hidden;
+    background-color: $maeli-background;
+
+    .mat-drawer-content {
+      overflow-x: hidden;
+    }
+
+    @media only screen and (min-width: 0) and (max-width: $mobile-size) {
+      background-color: $maeli-background;
+    }
+
+    @media only screen and (min-width: $mobile-size) and (max-width: $tablet-size) {
+      background-color: $maeli-background;
+    }
+  }
+}

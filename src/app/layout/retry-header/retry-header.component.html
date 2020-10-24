@@ -1,0 +1,30 @@
+<div class="retry-header-container">
+  <div class="retry-header">
+    <div class="header-left">
+      <a routerLink="/" (click)="menuClick()" routerLinkActive="active">
+        <img class="logo-image" src="/assets/img/logo/logo.png" />
+      </a>
+    </div>
+
+    <div class="header-right">
+      <div class="top-navigation-bar">
+        <!-- <div class="link-container"><a [routerLink]="['/contact']" routerLinkActive=" active">Contact</a></div> -->
+        <!-- <div class="link-container"><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+        <div class="link-container"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook icon-small" aria-hidden="true"></i></a></div> -->
+      </div>
+      <div class="maeli-menu" [ngClass]="isMenuOpen ? 'maeli-menu opened' : 'maeli-menu closed'" (click)="menuClick()">
+        <div class="maeli-menu-line"></div>
+        <div class="maeli-menu-line"></div>
+        <div class="maeli-menu-line"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="menu-popup" [ngClass]="isMenuOpen ? 'maeli-menu-popup opened' : 'maeli-menu-popup closed'">
+  <div class="menu-popup-container">
+    <!-- <div class="link-container"><a (click)="menuClick()" routerLink="/contact" routerLinkActive="active">Contact</a></div> -->
+    <!-- <div class="link-container"><a (click)="menuClick()" href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+    <div class="link-container"><a (click)="menuClick()" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></div> -->
+  </div>
+</div>

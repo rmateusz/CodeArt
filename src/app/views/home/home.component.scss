@@ -1,0 +1,25 @@
+@import '../../../styles/global.scss';
+
+.home-view {
+  overflow: hidden;
+  position: relative;
+
+  .container {
+    margin-left: 7rem;
+
+    .sketch-container {
+      position: relative;
+
+      .navigation-holder {
+        position: absolute;
+        padding-bottom: 0.2rem;
+        bottom: 1rem;
+
+        button {
+          font-size: 1.5rem;
+          color: rgb(255,255,255);
+        }
+      }
+    }
+  }
+}
