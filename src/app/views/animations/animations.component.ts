@@ -1,20 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import p5 from 'p5';
-import { allSketches } from '../../sketch-books';
+import { sketchBooks } from '../../sketch-books';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-animations',
+  templateUrl: './animations.component.html',
+  styleUrls: ['./animations.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class AnimationsComponent implements OnInit {
   canvas: any;
-  sw = 2;
-  c = [];
-  strokeColor = 0;
   currentSketchNr = 0;
-  pageSketches = allSketches;
+  pageSketches = sketchBooks.animations;
   sketchId = 'sketch-holder';
 
   constructor(

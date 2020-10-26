@@ -11,17 +11,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { NavigationModule } from './layout/navigation/navigation.module';
 import { MaterialModule } from './layout/material/material.module';
 import { HomeModule } from './views/home/home.module';
-import { ContactModule } from './views/contact/contact.module';
+import { AnimationsModule } from './views/animations/animations.module';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    AnimationsModule,
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
-    ContactModule,
     FormsModule,
     HomeModule,
     HttpClientModule,

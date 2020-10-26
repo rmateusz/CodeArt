@@ -1,10 +1,19 @@
 @import '../../../styles/global.scss';
 
 .retry-header-container {
-  flex-direction: row;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   height: 10vh;
+  opacity: 0.07;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  transition: opacity 1.7s;
+
+  &:hover {
+    opacity: 1;
+  }
 
   .retry-header {
     display: flex;
@@ -117,10 +126,12 @@
           font-style: normal;
           height: fit-content;
           margin-right: 2rem;
+          color: white;
 
           a {
             text-decoration: none;
-            color: $meali-link;
+            // color: $meali-link;
+            color: white;
             transition: color 0.7s ease 0.01s;
 
             i {

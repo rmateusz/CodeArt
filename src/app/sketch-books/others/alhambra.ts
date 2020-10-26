@@ -9,7 +9,7 @@ export const alhambra = (sketch: any, sketchId: string) => {
   let increase = true;
 
   sketch.setup = () => {
-    const canvas = sketch.createCanvas(sketch.windowWidth - 200, sketch.windowHeight - 200);
+    const canvas = sketch.createCanvas(sketch.windowWidth - 50, sketch.windowHeight - 50);
     canvas.parent(sketchId);
 
     sketch.frameRate(60);

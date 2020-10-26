@@ -3,7 +3,7 @@ export const twoBalls = (sketch: any, sketchId: string) => {
 
   sketch.setup = () => {
     document.getElementById(sketchId).innerHTML = '';
-    const canvas = sketch.createCanvas(sketch.windowWidth - 200, sketch.windowHeight - 200);
+    const canvas = sketch.createCanvas(sketch.windowWidth - 50, sketch.windowHeight - 50);
     canvas.parent(sketchId);
 
     sketch.background(0, 0, 33);
